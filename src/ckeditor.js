@@ -31,7 +31,6 @@ import Indent from '@ckeditor/ckeditor5-indent/src/indent.js';
 import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock.js';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic.js';
 import Link from '@ckeditor/ckeditor5-link/src/link.js';
-import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice.js';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat.js';
@@ -76,7 +75,6 @@ Editor.builtinPlugins = [
 	IndentBlock,
 	Italic,
 	Link,
-	MediaEmbed,
 	Paragraph,
 	PasteFromOffice,
 	RemoveFormat,
@@ -110,7 +108,6 @@ Editor.defaultConfig = {
 			'imageUpload',
 			'blockQuote',
 			'insertTable',
-			'mediaEmbed',
 			'undo',
 			'redo',
 			'alignment',
