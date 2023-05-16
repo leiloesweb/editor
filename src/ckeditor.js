@@ -42,7 +42,6 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount.js';
-import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
 
 class Editor extends ClassicEditor {}
 
@@ -87,7 +86,6 @@ Editor.builtinPlugins = [
 	TextTransformation,
 	Underline,
 	WordCount,
-	HtmlEmbed,
 ];
 
 // Editor configuration.
@@ -118,7 +116,6 @@ Editor.defaultConfig = {
 			'fontFamily',
 			'fontSize',
 			'sourceEditing',
-			'htmlEmbed',
 			'style'
 		]
 	},
