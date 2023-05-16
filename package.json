@@ -2,7 +2,7 @@
   "name": "ckeditor5-custom-build",
   "author": "CKSource",
   "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "SEE LICENSE IN LICENSE.md",
   "private": true,
   "main": "./build/ckeditor.js",
@@ -21,6 +21,7 @@
     "@ckeditor/ckeditor5-heading": "^35.3.2",
     "@ckeditor/ckeditor5-highlight": "^35.3.2",
     "@ckeditor/ckeditor5-horizontal-line": "^35.3.2",
+    "@ckeditor/ckeditor5-html-embed": "^37.1.0",
     "@ckeditor/ckeditor5-html-support": "^35.3.2",
     "@ckeditor/ckeditor5-image": "^35.3.2",
     "@ckeditor/ckeditor5-indent": "^35.3.2",
@@ -47,8 +48,5 @@
   },
   "scripts": {
     "build": "webpack --mode production"
-  },
-  "dependencies": {
-    "@ckeditor/ckeditor5-html-embed": "^37.1.0"
   }
 }
