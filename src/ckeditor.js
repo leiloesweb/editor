@@ -12,6 +12,7 @@ import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor.js';
 import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily.js';
 import FontSize from '@ckeditor/ckeditor5-font/src/fontsize.js';
 import GeneralHtmlSupport from '@ckeditor/ckeditor5-html-support/src/generalhtmlsupport.js';
+import FullPage from '@ckeditor/ckeditor5-html-support/src/fullpage.js';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading.js';
 import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed.js';
 import Image from '@ckeditor/ckeditor5-image/src/image.js';
@@ -51,6 +52,7 @@ Editor.builtinPlugins = [
 	FontColor,
 	FontFamily,
 	FontSize,
+	FullPage,
 	GeneralHtmlSupport,
 	Heading,
 	HtmlEmbed,
@@ -123,6 +125,16 @@ Editor.defaultConfig = {
 			'tableRow',
 			'mergeTableCells'
 		]
+	},
+	htmlSupport: {
+    allow: [
+			{
+				name: /.*/,
+				attributes: true,
+				classes: true,
+				styles: true
+			}
+    ]
 	}
 };
 
